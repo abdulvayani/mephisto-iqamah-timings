@@ -1,0 +1,16 @@
+<% content_for :action_nav do %>
+<!-- begin action nav -->
+<div id="page-nav">
+</div>
+<!-- /end action nav -->
+<% end %>
+<%= render :partial => "iqamah_timing", :collection => @iqamah_timings %>
+<% content_for :sidebar do %>
+<h3>Iqamah Timings</h3>
+<p>
+  This page is to edit the iqamah timings. Regardless of what time
+	you put for Maghrib, it will always show as "on time". Reminder
+	to find way to make it show the time automatically instead of
+	"ON TIME".
+</p>
+<% end %>

@@ -1,0 +1,10 @@
+<% form_remote_for iqamah_timing,
+     :url => { :action => :update, :id => iqamah_timing }, :html => { :id => 'iqamah-form' } do |f| %>
+<div class="group">
+  <dl>
+    <dt><label for="iqamah_timing_time"><%= iqamah_timing.name %> Time</label></dt>
+    <dd><%= f.time_select :time, :class => 'big', :twelve_hour => true %></dd>
+  </dl>
+</div>
+<p class="btns"><%= submit_tag "Save #{iqamah_timing.name}" %></p>
+<% end -%>

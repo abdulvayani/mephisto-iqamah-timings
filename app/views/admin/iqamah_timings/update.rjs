@@ -1,0 +1,5 @@
+if @iqamah_timing.errors.empty?
+  page.call 'Flash.notice', "#{@iqamah_timing.name} was updated successfully."
+else
+  page.call 'Flash.notice', "There was an error completing your request."
+end
