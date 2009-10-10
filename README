@@ -1,13 +1,13 @@
 IqamahTimings
 =============
 
-Introduction goes here.
+This was made in the process of creating a content management system for an Islamic site.
 
+TO INSTALL: 
 
-Example
-=======
+script/plugin install git://git@github.com:abdulvayani/mephisto-iqamah-timings
+rake db:migrate RAILS_ENV=production
 
-Example goes here.
+This adds the liquid variable "iqamah_timings" which is an array of the five times. The attributes of each timing are name, time, and is_maghrib.
 
-
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+Copyright (c) 2009 Abdul Vayani, released under the MIT license
